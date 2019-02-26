@@ -23,7 +23,7 @@ Updated Design Considerations:
 
 1.	Advantages of Spring boot:
 
-           The @SpringBootApplication annotation is equivalent to using     @Configuration, @EnableAutoConfiguration and @ComponentScan with their default attributes
+    The @SpringBootApplication annotation is equivalent to using     @Configuration, @EnableAutoConfiguration and @ComponentScan with their default attributes
 
 If there are beans/components in other packages that are not sub-packages of the main package, you should manually add them as @ComponentScan
  
@@ -32,8 +32,8 @@ In a non-Spring Boot Project, we would typically define the component scan expli
 SpringBoot can autodetect the “application.properties” file in the “src/main/resources” directory and any loaded properties can be injected easily. There is no need to tell the Spring where the property file is located or even explicitly register a ‘PropertySource’. 
 
 2.	Advantages of using @GetMapping over @RequestMapping at the method level:
-
-                 At the handler methods level,  It is best to use the more specific @GetMapping than the lengthier @RequestMapping(method=RequestMethod.GET) because with @RequestMapping, there is a possibility that the method attribute will be left off, as it is not mandatory.
+               
+     At the handler methods level,  It is best to use the more specific @GetMapping than the lengthier @RequestMapping(method=RequestMethod.GET) because with @RequestMapping, there is a possibility that the method attribute will be left off, as it is not mandatory.
 But it is always best practice to be specific about the HTTP method that will be handled and @GetMapping is specific for the GET requests.
 
 
@@ -60,7 +60,7 @@ Generally, Adjacency matrix representation is well suited when the graph is expe
 
 •	Speed:  If a switch contains more than five items, it’s implemented using a lookup table or a hash list. This means that all items get the same access time, compared to a list of if:s where the last item takes much more time to reach as it has to evaluate every previous condition first.
 
-      Here we are having less than 5 case values where there is not much difference in speed between the switch statement and the if-else statement but we have preferred the use of switch statement for the purpose of extensibility
+Here we are having less than 5 case values where there is not much difference in speed between the switch statement and the if-else statement but we have preferred the use of switch statement for the purpose of extensibility
 
 •	Better Readability.
 
