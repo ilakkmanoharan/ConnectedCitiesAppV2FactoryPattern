@@ -14,7 +14,7 @@ Graph Search Algorithm:
 The following graph search algorithms are implemented:
 1.	Depth First Search (DFS) 
 2.	Breadth First Search (BFS)
-3.	DisjointSets
+3.	Disjoint Sets
 
 The choice of the algorithm depends on the value of the connectedcities.graphsearch.algorithm property in the application.properties file. 
 
@@ -66,4 +66,4 @@ Here we are having less than 5 case values where there is not much difference in
 
 
 
-10.	We use if statement to check for null before entering the switch statement because switch(i) would throw a NullPointerException if I is null.
+10.	We use if statement to check for null before entering the switch statement because switch(i) would throw a NullPointerException if i is null.
